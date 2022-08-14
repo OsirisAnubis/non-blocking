@@ -4,7 +4,7 @@ const each = (arr, fn) => {
     setTimeout(() => {
       fn(arr[i]);
       if (i < len - 1) iter(++i);
-    });
+    }, 0);
   };
   iter(0);
 };
